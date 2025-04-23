@@ -1,6 +1,11 @@
+// ^FUNZIONI
+const reloadPage = () => {
+  location.reload();
+};
 // ^ RACCOLTA DATI
 const emailList = document.getElementById("list-group-email");
-let textList = "";
+const buttonRef = document.getElementById("buttonrefresh");
+
 // console.log(emailList);
 
 // ^ SVOLGIMENTO
@@ -30,6 +35,13 @@ for (let i = 0; i < 10; i++) {
             </ul>
         `;
 
+      buttonRef.innerHTML = `
+            <button type="button" class="btn btn-light my-3">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+        `;
+
+      buttonRef.addEventListener("click", reloadPage);
       console.log(email);
     }
   });

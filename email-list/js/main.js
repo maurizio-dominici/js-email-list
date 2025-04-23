@@ -17,20 +17,20 @@ for (let i = 0; i < 10; i++) {
     if (email.length === 10) {
       emailList.innerHTML = `
             <ul class="list-group">
-             <li class="list-group-item">${email[0]}</li>
-             <li class="list-group-item">${email[1]}</li>
-             <li class="list-group-item">${email[2]}</li>
-             <li class="list-group-item">${email[3]}</li>
-             <li class="list-group-item">${email[4]}</li>
-             <li class="list-group-item">${email[5]}</li>
-             <li class="list-group-item">${email[6]}</li>
-             <li class="list-group-item">${email[7]}</li>
-             <li class="list-group-item">${email[8]}</li>
-             <li class="list-group-item">${email[9]}</li>
+             <li class="list-group-item list-group-item-primary">${email[0]}</li>
+             <li class="list-group-item list-group-item-secondary">${email[1]}</li>
+             <li class="list-group-item list-group-item-success">${email[2]}</li>
+             <li class="list-group-item list-group-item-danger">${email[3]}</li>
+             <li class="list-group-item list-group-item-warning">${email[4]}</li>
+             <li class="list-group-item list-group-item-warning">${email[5]}</li>
+             <li class="list-group-item list-group-item-danger">${email[6]}</li>
+             <li class="list-group-item list-group-item-success">${email[7]}</li>
+             <li class="list-group-item list-group-item-secondary">${email[8]}</li>
+             <li class="list-group-item list-group-item-primary">${email[9]}</li>
             </ul>
         `;
 
-      //   console.log(email);
+      console.log(email);
     }
   });
 }
